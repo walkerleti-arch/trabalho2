@@ -1,0 +1,27 @@
+/* Ajusta o tamanho da logo */
+.navbar-brand img {
+    height: 120px;      /* Altura controlada */
+    width: auto;       /* Largura automática */
+    object-fit: contain;
+}
+
+/* Alinha os links verticalmente */
+.navbar-nav {
+    align-items: center;
+}
+
+/* Opcional: espaçamento entre links */
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Para tirar o espaçamento da borda esquerda */
+.container-fluid {
+    padding-left: 10 !important;
+}
+
+.navbar-brand {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
