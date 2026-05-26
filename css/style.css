@@ -1,22 +1,18 @@
-/* Ajusta o tamanho da logo */
 .navbar-brand img {
-    height: 120px;      /* Altura controlada */
-    width: auto;       /* Largura automática */
+    height: 120px;    
+    width: auto;      
     object-fit: contain;
 }
 
-/* Alinha os links verticalmente */
 .navbar-nav {
     align-items: center;
 }
 
-/* Opcional: espaçamento entre links */
 .nav-item {
     margin-left: 10px;
     margin-right: 10px;
 }
 
-/* Para tirar o espaçamento da borda esquerda */
 .container-fluid {
     padding-left: 10 !important;
 }
@@ -24,4 +20,61 @@
 .navbar-brand {
     margin-left: 0 !important;
     padding-left: 0 !important;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+    transition: transform 0.3s;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,123,255,0.3);
+}
+
+section {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 40px 0;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
 }
